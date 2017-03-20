@@ -1,26 +1,26 @@
 package lecture2;
 
 public class Account {
- private double balance;
+ private double money;
 
- public Account(double e){
-  balance = e;
+ public Account(double m){
+  money = m;
  }
  
  public double getMoney(){
-  return balance;
+  return money;
  }
  
- public void setMoney(double e){
-  balance = e;
+ public void setMoney(double m){
+  money = m;
  }
  
  public void add(double m){
-  balance += e;
+  money += m;
  }
  
  public void withdraw(double m){
-  balance -= e;
+  money -= m;
  }
 }
  

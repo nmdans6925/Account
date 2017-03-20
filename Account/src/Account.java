@@ -1,5 +1,3 @@
-package lecture2;
-
 public class Account {
  private double balance;
 
@@ -23,4 +21,3 @@ public class Account {
   balance -= e;
  }
 }
- 
