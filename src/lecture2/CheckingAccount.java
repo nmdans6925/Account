@@ -37,6 +37,18 @@ public class CheckingAccount extends Account {
 	public int debit(double m){
 		balance -= m;
 	}
+
+	@Override
+	public double EstimateValue(int month) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void passTime(int month) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
 
