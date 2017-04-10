@@ -19,9 +19,8 @@ public abstract class Account implements Valuable {
   balance += m;
  }
  
- public int debit(double m){
+ public void debit(double m)throws Exception{
   balance -= m;
-  return 0;
  }
  
  public abstract double getWithdrawableAccount();

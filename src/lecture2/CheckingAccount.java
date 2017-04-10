@@ -3,7 +3,6 @@ package lecture2;
 public class CheckingAccount extends Account {
 	private double credit_limit;
 	private double interest;
-	private double loan_interest;
 	
 	CheckingAccount(double m, double limit, double in, double loan){
 		super(m);
@@ -34,8 +33,15 @@ public class CheckingAccount extends Account {
 
 	
 	@Override
-	public int debit(double m){
-		balance -= m;
+	public void debit(double m) throws Exception{
+		
+		if(balance+credit_limit < m){
+			throw new Exception("한도초과");
+		}
+		else{
+			balance -= m;
+		}
+			
 	}
 
 	@Override
